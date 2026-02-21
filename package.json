@@ -24,6 +24,7 @@
   "private": true,
   "packageManager": "npm@11.10.0",
   "dependencies": {
+    "@analogjs/vite-plugin-angular": "^2.2.3",
     "@angular/common": "^21.1.0",
     "@angular/compiler": "^21.1.0",
     "@angular/core": "^21.1.0",
@@ -37,13 +38,15 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular/build": "^21.1.0",
+    "@angular-devkit/build-angular": "^21.1.4",
+    "@angular/build": "^21.1.4",
     "@angular/cli": "^21.1.0",
     "@angular/compiler-cli": "^21.1.0",
+    "@angular/platform-browser-dynamic": "^21.1.5",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
-    "jsdom": "^27.1.0",
+    "jsdom": "^27.4.0",
     "typescript": "~5.9.2",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.18"
   }
 }
