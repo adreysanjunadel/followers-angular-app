@@ -2,3 +2,9 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
 .container { padding: 20px; }
+
+navbar {
+  display: block;
+  border: 5px solid gray; /* This will show you exactly where the navbar is sitting */
+  min-height: 50px;
+}

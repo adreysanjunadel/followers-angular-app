@@ -1,15 +1,17 @@
-import { Http } from '@angular/http';
-import { Injectable } from '@angular/core';
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
+import { map } from 'rxjs';
+import { GithubFollower } from './github-followers.component';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class GithubFollowersService {
   private readonly _url = 'https://api.github.com/users/mosh-hamedani/followers';
 
-  constructor(private http: Http) {  }
+  private http = inject(HttpClient);
 
   getFollowers() { 
-    return this.http.get(this._url)
-      .map(response => response.json());
+    return this.http.get<GithubFollower[]>(this._url);
   }
 }
