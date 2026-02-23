@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { APP_CONFIG } from '../app.config.types';
 
 @Component({
-  selector: 'navbar',
+  selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
+  protected config = inject(APP_CONFIG);
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  backgroundColor = this.config.navBarBackgroundColor;
 }

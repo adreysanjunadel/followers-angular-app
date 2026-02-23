@@ -5,7 +5,7 @@ import { TestBed } from '@angular/core/testing';
 TestBed.configureTestingModule({
   providers: [
     provideZonelessChangeDetection(),
-    provideHttpClient(withFetch())
+    provideHttpClient(withFetch()),
     // ... your other providers
-  ]
+  ],
 });
