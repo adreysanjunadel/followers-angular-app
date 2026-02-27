@@ -1,4 +1,4 @@
-This is just an Angular Frontend demo for various deployments like Github pages and Firebase.
+This is just an Angular Frontend demo tutorial codebase from @moshhamedani 's course for various deployments like Github pages and Firebase.
 
 # DeployDemo
 
